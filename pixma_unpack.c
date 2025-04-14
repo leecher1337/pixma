@@ -9,7 +9,7 @@ static unsigned char sig[] =
 
 
 // Some sort of compression, was unable to identify the algorithm, LZ4 or something..?
-int decompress(unsigned char *src, unsigned char *dest, unsigned int size)
+void decompress(unsigned char *src, unsigned char *dest, unsigned int size)
 {
 	unsigned int i, l, x;
 	unsigned char c, d, e, f, *pdst;
