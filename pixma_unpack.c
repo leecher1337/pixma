@@ -120,7 +120,7 @@ int main(int argc, char **argv)
 		fread(&end, 4, 1, fp);
 		fread(&start, 4, 1, fp);
 		size=end-start;
-		printf ("Data offset: %08X\nStart address %08X\nEnd address %08X\nSize: %d bytes\n\n", offset, start, end, size);
+		printf ("Data offset: %08lX\nStart address %08X\nEnd address %08X\nSize: %ld bytes\n\n", offset, start, end, size);
 		offset &= 0xFFFFFF;
 	}
 
